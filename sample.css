@@ -1,0 +1,25 @@
+h1 {
+    color: darkblue;
+}
+button {
+    background-color: lightblue;
+}
+div {
+    margin: 24px;
+}
+div.infoMessage {
+    background-color: lightblue;
+}
+div.errorMessage {
+    background-color: lightcoral;
+}
+div.treasureHuntItem {
+    margin: 4px;
+    padding: 20px;
+    background-color: lightcyan;
+    border: solid black 1px;
+}
+div.treasureHuntItem:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
