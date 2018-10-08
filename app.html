@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sample TH App</title>
     <link rel="stylesheet" href="sample.css"/>
 </head>
-<body>
+<body onload="handleList(this);">
 
-    <h1>App</h1>
+
+    <div>
+        <h1>Sample TH App</h1>
+    </div>
 
     <div>
         This is where you web-app implements the Treasure Hunt client functionality. Make sure that any JavaScript you
@@ -15,8 +20,17 @@
         tested.
     </div>
 
-    <button onclick="handleList()">Reload</button>
+    <div>
+        <button id="buttonHandleList" onclick="handleList(this);">Reload</button>
+    </div>
+
+    <!--<div id="buttonReload" class="button" onclick="handleList(this)">Reload</div>-->
+    <div id="loader" class="loader" hidden></div>
+
+    <div>Choose a treasure Hunt</div>
+
     <div id="treasureHunts">
+        Empty
     </div>
 
     <div id="message" class="infoMessage">

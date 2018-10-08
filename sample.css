@@ -5,7 +5,7 @@ button {
     background-color: lightblue;
 }
 div {
-    margin: 24px;
+    margin: 10px;
 }
 div.infoMessage {
     background-color: lightblue;
@@ -14,12 +14,37 @@ div.errorMessage {
     background-color: lightcoral;
 }
 div.treasureHuntItem {
-    margin: 4px;
-    padding: 20px;
+    padding: 10px;
     background-color: lightcyan;
     border: solid black 1px;
+    border-radius: 10px;
 }
 div.treasureHuntItem:hover {
     background-color: lightblue;
     cursor: pointer;
+}
+
+div.button {
+    padding: 20px;
+    background-color: gray;
+    border: solid black 1px;
+}
+div.button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+/*creates an animated loader*/
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
