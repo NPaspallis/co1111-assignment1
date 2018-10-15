@@ -34,6 +34,11 @@ div.button:hover {
     cursor: pointer;
 }
 
+div.testMessage {
+    background-color: yellow;
+    border: 1px black dotted;
+}
+
 /*creates an animated loader*/
 .loader {
     border: 16px solid #f3f3f3; /* Light grey */
